@@ -1,0 +1,21 @@
+# не тягнемо в build context і не палимо в image layers
+.git/
+.gitignore
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+.env
+.env.*
+!.env.example
+
+# є тільки для docker compose на хості, не потрібен усередині image
+docker-compose.yml
+
+README.md
